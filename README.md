@@ -6,4 +6,4 @@ Repositorio con apuntes y ejemplos de conceptos en el lenguaje de programación 
 Cada carpeta en la raíz tiene uno o varios proyectos de rust con código funcional, adicionalmente existe una explicación más detallada dentro del directorio README.
 
 ## Indice
-- [Macros](./README/macros/)
+- [Macros](./README/macros/0-Intro.md)
