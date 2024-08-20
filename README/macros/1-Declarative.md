@@ -1,3 +1,5 @@
+# Macros declarativos
+
 También son conocidos  como `macros por ejemplo` y usan una especie de `match` para funcionar proveniente del macro `macro_rules!`.
 
 Ejemplo de macro llamado `hello`.
