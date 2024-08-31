@@ -1,8 +1,8 @@
 extern crate proc_macro;
 use proc_macro::{TokenStream};
 
-use darling::{FromMeta, ToTokens};
 use syn::{self, parse_macro_input, parse_quote, AttributeArgs, FnArg, Ident, ItemFn, Pat, Stmt};
+use darling::{FromMeta, ToTokens};
 
 #[derive(FromMeta)]
 struct MacroArgs {
@@ -25,7 +25,7 @@ pub fn log_call(args: TokenStream, input: TokenStream) -> TokenStream {
   impl_log_call(&attr_args, &mut input)
 }
 
-// Macro attribute deinition function
+// Macro attribute definition function
 fn impl_log_call(args: &MacroArgs, input: &mut ItemFn) -> TokenStream {
   let fn_name = &input.sig.ident;
   if args.verbose {
@@ -53,7 +53,7 @@ fn extract_args_names(func: &ItemFn) -> Vec<&Ident> {
 
 fn generate_verbose_log(fn_name: &Ident, fn_args: Vec<&Ident>) -> Vec<Stmt>{
   let mut statements = vec![parse_quote!{
-    print!("[Info] calling |", stringify!(#fn_name));
+    print!("[Info] calling {} |", stringify!(#fn_name));
   }];
 
   for arg in fn_args {

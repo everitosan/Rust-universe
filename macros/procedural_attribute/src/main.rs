@@ -2,7 +2,7 @@ use procedural_attribute::log_call;
 
 fn main() {
   println!("Hello world");
-  custom("");
+  custom("some str");
 }
 
 #[log_call(verbose)]

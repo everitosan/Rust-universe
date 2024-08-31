@@ -34,7 +34,7 @@ Estas representan los tipos de datos que podemos mandar a las macros, algunas de
 - block (Block expression)
 
 
-El macro `map`, cuenta con dos formas en que puede ser utilizado; esto se logra gracias al match especificado en el `macro_rules!`.
+El siguiente ejemplo muestra como el macro `map` cuenta con dos formas en que puede ser utilizado, esto se logra gracias al match especificado en el `macro_rules!`.
 
 ```rust
 use declarative::map;

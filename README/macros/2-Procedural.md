@@ -43,11 +43,13 @@ fn main() {
 ```
 
 ### Attribute
-Este tipo de macros pueden recibir atributos en su compilación y tiene la particularidad de recibor dos parámetros en la definición de la función del macro. El `Token Stream` que devuelve reemplaza al código afectado por este macro. 
+Este tipo de macros pueden recibir atributos en su compilación.
+
+La función del macro recibirá  dos parámetros de tipo `TokenStream` y devolverá a su vez otro `TokenStream` que reemplazará la función a la que esté asociado.
 
 ```rust
 #[proc_macro_attribute]
-pub fn log_call(args: TokenStream, input: TokenStream) -> {
+pub fn log_call(args: TokenStream, input: TokenStream) -> TokenStream {
 	input
 } 
 ```
