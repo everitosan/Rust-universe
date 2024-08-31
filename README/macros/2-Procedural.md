@@ -14,6 +14,7 @@ proc-macro = true
 
 
 ### Function
+>	[Proyecto de ejemplo](../../macros/procedural_function/)
 
 El macro más simple es uno que devuelve el mismo`Token Stream` que recibe.
 
@@ -42,7 +43,12 @@ fn main() {
 }
 ```
 
+
+
 ### Attribute
+
+> [Proyecto de ejemplo](../../macros/procedural_attribute/)  
+
 Este tipo de macros pueden recibir atributos en su compilación.
 
 La función del macro recibirá  dos parámetros de tipo `TokenStream` y devolverá a su vez otro `TokenStream` que reemplazará la función a la que esté asociado.

@@ -1,4 +1,5 @@
 # Macros declarativos
+>	[Proyecto de ejemplo](../../macros/declarative/)
 
 También son conocidos  como **macros por ejemplo** y usan una especie de `match` para funcionar proveniente del macro `macro_rules!`.
 
